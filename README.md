@@ -8,10 +8,10 @@ This project follows the **BLAST Protocol** and a **3-Layer Architecture** (Fron
 
 ```mermaid
 graph TD
-    User[👤 User] -->|Types Request| UI[💻 Frontend (Glassmorphism)]
-    UI -->|POST /chat| API[🚀 Backend API (FastAPI)]
-    API -->|Process Request| Logic[🧠 Chatbot Logic]
-    Logic -->|Generate Response| DB[(🦙 Ollama Local LLM)]
+    User["👤 User"] -->|Types Request| UI["💻 Frontend (Glassmorphism)"]
+    UI -->|POST /chat| API["🚀 Backend API (FastAPI)"]
+    API -->|Process Request| Logic["🧠 Chatbot Logic"]
+    Logic -->|Generate Response| DB[("🦙 Ollama Local LLM")]
     DB -->|Llama 3.2 Output| Logic
     Logic -->|Format Response| API
     API -->|JSON Response| UI
