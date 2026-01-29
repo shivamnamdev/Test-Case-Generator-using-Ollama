@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI QA Chatbot | BLAST</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="background-glob"></div>
+    <div class="background-glob glob-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">🧬 QA Chatbot</div>
+            <div class="status-indicator">
+                <span class="dot"></span> Online
+            </div>
+        </header>
+
+        <main class="chat-interface glass-panel">
+            <div id="chat-history" class="chat-history">
+                <div class="message assistant">
+                    <div class="avatar">🤖</div>
+                    <div class="content">
+                        Hello! I am your QA Architect. Paste your requirements or code, and I can help you generate
+                        <b>Proper Test Cases</b> or <b>Automation Scripts</b>. Which one do you prefer?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="chat-input"
+                    placeholder="Type your message or paste code... (Shift+Enter for new line)"></textarea>
+                <button id="send-btn" class="glow-button">Send 🚀</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
